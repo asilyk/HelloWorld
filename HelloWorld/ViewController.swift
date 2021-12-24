@@ -8,10 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet var helloWorldLabel: UILabel!
     @IBOutlet var showTextButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         helloWorldLabel.isHidden = true
@@ -21,13 +20,11 @@ class ViewController: UIViewController {
 
     @IBAction func showTextButtonPressed() {
         helloWorldLabel.isHidden.toggle()
-        
+
         if helloWorldLabel.isHidden {
             showTextButton.setTitle("Show text", for: .normal)
         } else {
             showTextButton.setTitle("Hide text", for: .normal)
         }
     }
-    
 }
-
